@@ -1,11 +1,10 @@
 // TODO: Write your function in this file
 
 // TODO: Change undefined below to the name of your function
-module.exports = undefined
-
-const fizzBuzzArray = []
+module.exports = fizzBuzz
 
 function fizzBuzz(lower, upper) {
+    const fizzBuzzArray = []
     for (let i = lower; i <= upper; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             fizzBuzzArray.push('FizzBuzz')
@@ -19,8 +18,3 @@ function fizzBuzz(lower, upper) {
     }
     return fizzBuzzArray
 }
-
-const lower = 1
-const upper = 15
-
-console.log(fizzBuzz(lower, upper))
